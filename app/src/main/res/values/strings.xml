@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">U1EjercicioPropuesto1</string>
+    <string name="opcion1">Calculadora</string>
+    <string name="opcion3">Datos de Alumno</string>
+    <string name="Salir">Salir</string>
+    <string name="tituloAplicacion">Ejercicios Propuestos 1</string>
+    <string name="app_name">U1EjerPropuestos1</string>
 </resources>
