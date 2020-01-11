@@ -51,7 +51,7 @@ public class Alumno extends AppCompatActivity {
     public void Verificar(View view){
         Intent intent = new Intent(this, Bienvenido.class);
         intent.putExtra("nombre", edtnombre.getText().toString());
-        intent.putExtra("edad", Integer.parseInt(edtape.getText().toString()));
+        intent.putExtra("ape", edtape.getText().toString());
         startActivity(intent);
     }
 }
