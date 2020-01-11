@@ -21,7 +21,7 @@ public class Bienvenido extends AppCompatActivity {
         ape = extras.getString("ape");
         txtmensaje = findViewById(R.id.txtmensaje);
 
-        txtmensaje.setText("Bienvenido " + nombre + ape);
+        txtmensaje.setText("Bienvenido " + nombre +" "+ ape);
     }
 }
 

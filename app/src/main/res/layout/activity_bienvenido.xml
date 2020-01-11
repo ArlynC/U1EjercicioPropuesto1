@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Bienvenido">
+
     <TextView
         android:id="@+id/txtmensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="test"
-        android:textSize="35sp"/>
+        android:textSize="35sp"
+        />
 </LinearLayout>

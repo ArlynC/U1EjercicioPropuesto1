@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class Calculadora extends Activity {
 
-    Button btnUno,btnDos,btnTres,btnCuatro,btnCinco,btnSeis,btnSiete,btnOcho,
+    Button btnCero,btnUno,btnDos,btnTres,btnCuatro,btnCinco,btnSeis,btnSiete,btnOcho,
             btnNueve,btnSuma,btnResta,btnMultiplica,btnDivide,btnClean,btnBorrar,btnPunto,btnIgual;
     TextView Resultado;
     double resultado;
@@ -20,6 +20,7 @@ public class Calculadora extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculadora);
 
+        btnCero=(Button) findViewById(R.id.Cero);
         btnUno = (Button)findViewById(R.id.Uno);
         btnDos = (Button)findViewById(R.id.Dos);
         btnTres = (Button)findViewById(R.id.Tres);
@@ -38,6 +39,15 @@ public class Calculadora extends Activity {
         Resultado = (TextView)findViewById(R.id.Etiqueta);
         btnPunto = (Button)findViewById(R.id.Punto);
         btnIgual = (Button)findViewById(R.id.Igual);
+
+        btnCero.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                mostrar = Resultado.getText().toString();
+                mostrar = mostrar + "0";
+                Resultado.setText(mostrar);
+            }
+        });
 
         btnUno.setOnClickListener(new View.OnClickListener(){
             @Override
